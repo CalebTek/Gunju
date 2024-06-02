@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.header .logo, .footer .logo {
+    font-family: 'Ojuju', sans-serif;
+}
+.menu .nav-link {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    /* padding: 2%; */
+}
+.footer-line {
+    border-top: 1px solid white;
+}
+.footer-bottom .social-icons img {
+    width: 36px;
+    height: 36px;
+}
+.footer-bottom .copyright {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
