@@ -42,7 +42,7 @@ jobs:
 
       # Build Jekyll site
       - name: Build Jekyll site
-        run: bundle exec jekyll build --destination _site
+        run: bundle exec jekyll build --source src --destination _site
 
       # Upload artifacts
       - name: Upload artifact
