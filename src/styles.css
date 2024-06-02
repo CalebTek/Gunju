@@ -2,9 +2,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    background-color: black;
 }
+
+h1{
+    font-family: 'Iowan Old Style', serif;
+}
+
 .header .logo, .footer .logo {
     font-family: 'Ojuju', sans-serif;
+    background-color: black;
 }
 .menu .nav-link {
     font-family: 'Work Sans', sans-serif;
@@ -21,4 +28,29 @@ body {
 .footer-bottom .copyright {
     font-family: 'DM Sans', sans-serif;
     color: white;
+}
+
+/* Section 1 */
+
+.section-1 {
+    background: black;
+}
+
+.headline {
+    font-family: 'Iowan Old Style', serif;
+    color: white;
+    font-size: 600%;
+}
+
+.info-container {
+    padding-top: 200px;
+}
+
+.info-text {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+.btn-outline-light {
+    align-self: flex-start;
 }

@@ -18,76 +18,457 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header bg-dark text-white">
-      <nav class="navbar navbar-expand-lg bs-dark-bg-subtle">
+    <header class="header bs-dark-bg-subtle text-white">
+      <nav class="navbar navbar-expand-lg navbar-dark bs-dark-bg-subtle">
         <div class="container justify-content-between align-items-center py-3">
-          <div class="navbar-brand" style="color: white">Gunju</div>
-          <nav class="navbar-nav justify-content-between align-items-center">
-            <a href="#" class="nav-link text-white nav-link dropdown-toggle"
-              >Home</a
-            >
-            <a href="#" class="nav-link text-white">Music</a>
-            <a href="#" class="nav-link text-white">Literature</a>
-            <a href="#" class="nav-link text-white">Fashion</a>
-            <a href="#" class="nav-link text-white">Contact</a>
-          </nav>
+          <a class="navbar-brand" href="#">Gunju</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Home</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Literature</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- Content goes here -->
-    <!-- Section 1-->
-    <section></section>
 
-    <!-- Section 2-->
-    <section></section>
+    <!-- Section 1-->
+    <section class="container section-1 d-flex align-items-center row mb-3">
+      <div class="d-flex col-md-9 justify-content-center align-items-center">
+        <h1 class="headline mt-5">
+          WHERE <br />
+          AFRO-PEAN <br />
+          ART LIVES
+        </h1>
+      </div>
+      <div
+        class="info-container d-flex flex-column justify-content-start col-md-3"
+      >
+        <p class="info-text">
+          Discover a world of art where African and European cultures converge
+          at Gunju.
+        </p>
+        <button type="button" class="btn btn-outline-light mt-auto">
+          See our Collection
+        </button>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="container-fluid p-0 mb-2 mt-2">
+      <div class="w-100">
+        <img
+          src="assets/images/image 4.svg"
+          alt="section-2-img"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
     <!-- Section 3-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="text-white mt-5">
+        <h1 class="text-center">ABOUT GUNJU</h1>
+      </div>
+      <div class="row mt-5 mb-2">
+        <div class="text-white col-md-6">
+          <p>
+            <b>Our heartbeat is Afro-pean music.</b> This electric mix combines
+            the catchy beats of dance music with the soulful sounds of African
+            vocalists. We honour Fela Kuti's soul by integrating his heritage
+            into music that is energetic and purposeful. Hear the force of
+            Nigerian indigenous languages combined with Western instrumentation,
+            resulting in a sound that is both unique and deeply rooted.
+          </p>
+          <p>
+            <b>Beyond the music,</b> Gunju crafts an ensemble of creativity.
+            Experience the founder's intriguing literary works, where words
+            create vivid images, and delve into the rich tapestry of Afro-pean
+            culture. Immerse yourself in the founder's distinctive fashion
+            designs, each of which exemplifies the combination of African
+            heritage and contemporary style.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="img-fluid"
+            src="assets/images/Frame 1000004239.svg"
+            alt="section-3-img"
+          />
+        </div>
+      </div>
+    </section>
     <!-- Section 4-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="text-white mt-5">
+        <h1 class="text-center">GUNJU MUSIC</h1>
+        <p class="text-center">
+          A robust and lively choice, perfect for music enthusiasts who enjoy
+          discovering new sounds.
+        </p>
+      </div>
+      <div class="row align-items-center justify-content-between p-3">
+        <div class="col-md-4 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/Frame 1000004240.svg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <p class="text-center fw-bold">Oga Jankaraman</p>
+            <button type="button" class="btn btn-light">Listen Now</button>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/Frame 1000004240.svg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <p class="text-center fw-bold">Carry eye go market</p>
+            <button type="button" class="btn btn-light">Listen Now</button>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/Frame 1000004240.svg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <p class="text-center fw-bold">Thru Thick and Thin</p>
+            <button type="button" class="btn btn-light">Listen Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section 5-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <h1 class="text-white">GUNJU BOOKS</h1>
+          <p class="text-white text-wrap">
+            Set off on a literary journey where African heritage meets European
+            influences.
+          </p>
+        </div>
+        <div class="col-md-4 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/Frame 1000004241.svg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <p class="text-center fw-bold">Book Title here</p>
+            <button type="button" class="btn btn-light">Coming Soon</button>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/Frame 1000004241.svg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <p class="text-center fw-bold">Book Title here</p>
+            <button type="button" class="btn btn-light">Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section 6-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="row mt-3">
+        <div class="row text-white">
+          <div class="col-md-6">
+            <p>
+              Gunju's fashion collection is more than just apparel; it makes a
+              statement. We honour the rich history of Nigerian Aso Oke
+              textiles, which is carefully weaved and holds cultural value. Our
+              founder reinvents this timeless cloth, creating innovative styles
+              that redefine current fashion.
+            </p>
+            <p>
+              <b>Unique Designs:</b> Find clothing that combines Aso Oke's
+              brilliant colours and detailed patterns with modern styles and
+              craftsmanship.
+            </p>
+            <p>
+              Locally Made, Globally Inspired: Our clothing are created by
+              professional artisans in Nigeria, ensuring authenticity and
+              superior quality.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h1>FASHION <br />GALLERY</h1>
+          </div>
+        </div>
+        <div class="row mt-2 p-3">
+          <div class="col-md-4 p-4">
+            <img
+              class="img-fluid"
+              src="assets/images/Container.svg"
+              alt="section-6-img"
+            />
+          </div>
+          <div class="col-md-4 p-4">
+            <img
+              class="img-fluid"
+              src="assets/images/Container 1.svg"
+              alt="section-6-img"
+            />
+          </div>
+          <div class="col-md-4 p-4">
+            <img
+              class="img-fluid"
+              src="assets/images/Container 2.svg"
+              alt="section-6-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section 7-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="text-white mt-3">
+        <h1>ABOUT OUR <br />FOUNDER</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-4">
+          <img
+            class="img-fluid"
+            src="assets/images/image 3.svg"
+            alt="section-7-img"
+          />
+        </div>
+        <div class="col-md-6 text-white p-4">
+          <p>
+            This is about you. This is about you. This is about you. This is
+            about you. This is about you. This is about you. This is about you.
+            This is about you. This is about you. This is about you. This is
+            about you. This is about you. This is about you. This is about you.
+            This is about you. This is about you. This is about you. This is
+            about you. This is about you. This is about you. This is about you.
+            This is about you. This is about you. This is about you. This is
+            about you. This is about you. This is about you. This is about you.
+            This is about you. This is about you. This is about you. This is
+            about you. This is about you. This is about you. This is about you.
+            This is about you. This is about you. This is about you. This is
+            about you. This is about you. This is about you. This is about you.
+            This is about you. This is about you. This is about you.
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Section 8-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="row text-white">
+        <div class="col-md-9 text-wrap">
+          <h1>MARK YOUR <br />CALENDARS!</h1>
+        </div>
+        <div class="col-md-3">
+          <p>
+            Join us for exciting parties honouring Afro-pean culture via music,
+            fashion, and artistic expression. Each site will provide a distinct
+            experience, but the spirit of Gunju will be present at all events.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/R.jpeg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <h1 class="fw-bold">LAGOS CITY</h1>
+            <button type="button" class="btn btn-outline-light mt-auto">
+              Coming Soon
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative p-3">
+          <img
+            class="img-fluid"
+            src="assets/images/Funny-England-Quotes-6.jpg"
+            alt="section-4-img"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-white p-4 rounded align-items-center justify-content-center"
+          >
+            <h1 class="fw-bold">LON<br />DON</h1>
+            <button type="button" class="btn btn-outline-light mt-auto">
+              Coming Soon
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section 9-->
-    <section></section>
+    <section class="container align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-md-9 text-white">
+          <h1>CONTACT US</h1>
+          <p class="text-wrap">
+            We would love to hear from you! Whether you have questions about our
+            Afro-pean music, the founder's literary works and fashion line, or
+            simply want to connect with the Gunju community, we're here to help.
+          </p>
+          <p>
+            <b
+              >For inquiries: Please contact us directly at any of these email
+              addresses</b
+            >
+          </p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-outline-light mt-auto">
+            johndoe123@gmail.com
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-outline-light mt-auto">
+            johndoe123@gmail.com
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-outline-light mt-auto">
+            johndoe123@gmail.com
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-outline-light mt-auto">
+            johndoe123@gmail.com
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white mt-5">
-      <nav class="navbar navbar-expand-lg bs-dark-bg-subtle">
+    <footer class="footer bs-dark-bg-subtle text-white mt-5">
+      <nav class="navbar navbar-expand-lg navbar-dark bs-dark-bg-subtle">
         <div class="container justify-content-between align-items-center py-3">
-          <div class="navbar-brand" style="color: white">Gunju</div>
-          <nav class="navbar-nav justify-content-between align-items-center">
-            <a href="#" class="nav-link text-white nav-link dropdown-toggle"
-              >Home</a
-            >
-            <a href="#" class="nav-link text-white">Music</a>
-            <a href="#" class="nav-link text-white">Literature</a>
-            <a href="#" class="nav-link text-white">Fashion</a>
-            <a href="#" class="nav-link text-white">Contact</a>
-          </nav>
+          <a class="navbar-brand" href="#">Gunju</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavFooter"
+            aria-controls="navbarNavFooter"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavFooter">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownFooter"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Home</a
+                >
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownFooter"
+                >
+                  <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Literature</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <hr class="footer-line my-3" />
       <div
-        class="container d-flex flex-row align-items-center justify-content-between"
+        class="container d-flex flex-column flex-md-row align-items-center justify-content-between mb-3"
       >
         <div class="social-icons d-flex mb-3">
-          <img src="assets/icons/Facebook.svg" alt="Facebook" class="" />
-          <img src="assets/icons/Twitter.svg" alt="Twitter" class="mx-2" />
-          <img src="assets/icons/Instagram.svg" alt="Instagram" class="mx-2" />
-          <img src="assets/icons/LinkedIn.svg" alt="LinkedIn" class="mx-2" />
+          <a href="#"
+            ><img src="assets/icons/Facebook.svg" alt="Facebook" class=""
+          /></a>
+          <a href="#"
+            ><img src="assets/icons/Twitter.svg" alt="Twitter" class="mx-2"
+          /></a>
+          <a href="#"
+            ><img src="assets/icons/Instagram.svg" alt="Instagram" class="mx-2"
+          /></a>
+          <a href="#"
+            ><img src="assets/icons/LinkedIn.svg" alt="LinkedIn" class="mx-2"
+          /></a>
         </div>
         <div class="copyright">&copy; 2024 Gonju.co | All Rights Reserved</div>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBogGzBz7rvxERjG4lrc3sqozPpMT0P1F2VVF4Lv0J+g8vc4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-g++oJNRLmt4FbUPTwL1b9D0U00IlPsMgo/INWbmFq2BOwo7X8UO8H4tGQw1gw8/2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
