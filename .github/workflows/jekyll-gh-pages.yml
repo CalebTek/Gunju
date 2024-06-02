@@ -1,3 +1,4 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
@@ -26,49 +27,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      # Set up Ruby and Jekyll
-      - name: Set up Ruby and Jekyll
-        uses: ruby/setup-ruby@v1
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          ruby-version: 2.7 # You can adjust the Ruby version as needed
-
-      # Install Jekyll and dependencies
-      - name: Install Jekyll
-        run: gem install jekyll bundler
-      - name: Install dependencies
-        run: bundle install
-
-      # Build Jekyll site
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --source src --destination _site
-
-      # Upload artifacts
+          source: ./
+          destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: jekyll-site
-          path: ./_site
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # Download artifacts
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: jekyll-site
-          path: ./_site
-
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: _site
+        id: deployment
+        uses: actions/deploy-pages@v2
