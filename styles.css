@@ -7,6 +7,7 @@ body {
 
 h1{
     font-family: 'Iowan Old Style', serif;
+    font-size: 10vw
 }
 
 .header .logo, .footer .logo {
@@ -39,7 +40,7 @@ h1{
 .headline {
     font-family: 'Iowan Old Style', serif;
     color: white;
-    font-size: 600%;
+    font-size: 10vw;
 }
 
 .info-container {
@@ -53,4 +54,12 @@ h1{
 
 .btn-outline-light {
     align-self: flex-start;
+}
+
+/* Section 8*/
+
+.section-8-headline {
+  font-family: 'Iowan Old Style', serif;
+  color: white;
+  font-size: 10vw
 }
