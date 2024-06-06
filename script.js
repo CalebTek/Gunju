@@ -3,11 +3,11 @@ function applyThemeBasedOnTime() {
   if (hour >= 6 && hour < 18) {
     document.body.classList.add("light-theme");
     updateButtonClass("btn-outline-dark", "btn-outline-light");
-    //updateButtonClass("btn-dark", "btn-light");
+    toggleNavbarClass(true);
   } else {
     document.body.classList.remove("light-theme");
     updateButtonClass("btn-outline-light", "btn-outline-dark");
-    //updateButtonClass("btn-light", "btn-dark");
+    toggleNavbarClass(false);
   }
 }
 
@@ -17,6 +17,15 @@ function updateButtonClass(addClass, removeClass) {
     button.classList.add(addClass);
     button.classList.remove(removeClass);
   });
+}
+
+function toggleNavbarClass(isLightTheme) {
+  const navbar = document.querySelector(".navbar");
+  if (isLightTheme) {
+    navbar.classList.remove("navbar-dark", "bs-dark-bg-subtle");
+  } else {
+    navbar.classList.add("navbar-dark", "bs-dark-bg-subtle");
+  }
 }
 
 applyThemeBasedOnTime();
