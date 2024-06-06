@@ -1,13 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif,'Ojuju', 'DM Sans','Iowan Old Style', serif;
     background-color: black;
+    color: white;
 }
 
 h1{
     font-family: 'Iowan Old Style', serif;
     font-size: 10vw
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
 }
 
 .header .logo, .footer .logo {
@@ -35,12 +40,6 @@ h1{
 
 .section-1 {
     background: black;
-}
-
-.headline {
-    font-family: 'Iowan Old Style', serif;
-    color: white;
-    font-size: 10vw;
 }
 
 .info-container {
