@@ -1,64 +1,44 @@
+:root {
+    --background-color: black;
+    --text-color: white;
+    --nav-background-color: black;    
+    --nav-text-color: white;         
+}
+
+.light-theme {
+  --background-color: white;
+  --text-color: black;
+  --nav-background-color: white;
+  --nav-text-color: black;         
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif,'Ojuju', 'DM Sans','Iowan Old Style', serif;
-    background-color: black;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--nav-background-color);
+  color: var(--nav-text-color);
+}
+
+.nav-link {
+  color: var(--nav-text-color);
 }
 
 h1{
     font-family: 'Iowan Old Style', serif;
-    font-size: 10vw
+    font-size: 8vw
 }
 
 p{
     font-family: 'Work Sans', sans-serif;
 }
 
-.header .logo, .footer .logo {
-    font-family: 'Ojuju', sans-serif;
-    background-color: black;
-}
-.menu .nav-link {
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-    /* padding: 2%; */
-}
-.footer-line {
-    border-top: 1px solid white;
-}
-.footer-bottom .social-icons img {
-    width: 36px;
-    height: 36px;
-}
-.footer-bottom .copyright {
-    font-family: 'DM Sans', sans-serif;
-    color: white;
-}
-
-/* Section 1 */
-
-.section-1 {
-    background: black;
-}
-
-.info-container {
-    padding-top: 200px;
-}
-
-.info-text {
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-}
-
-.btn-outline-light {
-    align-self: flex-start;
-}
-
-/* Section 8*/
-
-.section-8-headline {
-  font-family: 'Iowan Old Style', serif;
-  color: white;
-  font-size: 10vw
+.navbar-brand{
+    font-family: 'Ojuju';
+    color: var(--nav-text-color);
 }
